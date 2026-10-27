@@ -4,7 +4,7 @@
 import { useEffect, useRef, useState, type ReactNode } from "react";
 import { smoothPath } from "@/components/map/geometry";
 import { CellarFacade, StopBadge } from "@/components/map/glyphs";
-import { formatDistance, useGeolocation } from "@/components/map/hooks";
+import { useGeolocation } from "@/components/map/hooks";
 import { MapIcon } from "@/components/map/icons";
 import styles from "@/components/map/map.module.css";
 import { Container } from "@/components/ui/Container";
@@ -163,7 +163,7 @@ export function GuideExperience({
 
   return (
     <>
-      <Container className="grid gap-8 py-8 pb-48 lg:grid-cols-[minmax(0,7fr)_minmax(0,5fr)] lg:gap-12 lg:pb-32">
+      <Container className="grid grid-cols-[minmax(0,1fr)] gap-8 py-8 pb-48 lg:grid-cols-[minmax(0,7fr)_minmax(0,5fr)] lg:gap-12 lg:pb-32">
         <div className="lg:sticky lg:top-24 lg:self-start">
           <h2 className="sr-only">Trasa</h2>
           <div ref={routeScroller} className={`${styles.paper} overflow-x-auto rounded-(--radius-panel) border-2 border-spras-tmava/30`}>
@@ -285,7 +285,7 @@ export function GuideExperience({
           <div className="border-b border-vapno/15 bg-frankovka" role="status">
             <Container className="flex flex-wrap items-center gap-x-4 gap-y-1 py-2 text-sm">
               <p className="flex-1">
-                Ste pri zastávke {nearby.s.order}: <strong>{nearby.s.title}</strong> ({formatDistance(nearby.d)}). Spustiť ju?
+                Ste pri zastávke {nearby.s.order}: <strong>{nearby.s.title}</strong>. Spustiť ju?
               </p>
               <button type="button" onClick={() => goTo(nearby.i, true)} className="min-h-11 rounded-(--radius-ui) bg-vapno px-3 font-bold text-frankovka">
                 Spustiť zastávku {nearby.s.order}
