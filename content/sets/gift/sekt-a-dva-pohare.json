@@ -1,0 +1,14 @@
+{
+  "slug": "sekt-a-dva-pohare",
+  "name": "Sekt a dva poháre",
+  "description": "Na oslavu, ktorá si zaslúži bublinky.",
+  "contents": [
+    "Sekt Na Spraši brut",
+    "2 poháre na sekt"
+  ],
+  "priceCents": 3490,
+  "image": {
+    "src": "/images/placeholder/darcek.svg",
+    "alt": "Fľaša sektu s dvomi pohármi"
+  }
+}

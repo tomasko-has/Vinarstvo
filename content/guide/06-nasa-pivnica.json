@@ -1,0 +1,16 @@
+{
+  "id": "nasa-pivnica",
+  "order": 6,
+  "title": "Vinárstvo Na Spraši",
+  "mapPoint": {
+    "x": 590,
+    "y": 280
+  },
+  "gps": {
+    "lat": 48.20138,
+    "lng": 17.79324
+  },
+  "audioUrl": "/audio/guide/06-nasa-pivnica.mp3",
+  "durationSec": 160,
+  "transcript": "Toto je naša pivnica. Chodba ide dvanásť metrov do svahu a celý rok je v nej jedenásť stupňov a vysoká vlhkosť. Tmavý povlak na stenách je pivničná pleseň. Nebojte sa jej, starí vinári hovorili, že kde je pleseň, tam je dobré víno."
+}

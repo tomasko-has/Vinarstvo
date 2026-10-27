@@ -1,0 +1,16 @@
+{
+  "id": "lis-pod-orechom",
+  "order": 4,
+  "title": "Starý lis",
+  "mapPoint": {
+    "x": 180,
+    "y": 330
+  },
+  "gps": {
+    "lat": 48.200848,
+    "lng": 17.79078
+  },
+  "audioUrl": "/audio/guide/04-lis-pod-orechom.mp3",
+  "durationSec": 110,
+  "transcript": "Drevený lis pri pivnici U Starého lisu je starší ako väčšina pivníc. Hrozno sa doň nasypalo, zakrylo doskami a vreteno sa krútilo, kým nevytieklo posledné kvapky muštu."
+}

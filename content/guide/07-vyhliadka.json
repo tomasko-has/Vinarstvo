@@ -1,0 +1,16 @@
+{
+  "id": "vyhliadka",
+  "order": 7,
+  "title": "Vyhliadka nad vinicami",
+  "mapPoint": {
+    "x": 620,
+    "y": 120
+  },
+  "gps": {
+    "lat": 48.202513,
+    "lng": 17.79342
+  },
+  "audioUrl": "/audio/guide/07-vyhliadka.mp3",
+  "durationSec": 120,
+  "transcript": "Z vyhliadky vidíte všetky naše viničné trate: Hlinisko vľavo, Pod Hájom pri lese, Dlhé rady v strede a Kamennú na kopci vpravo. Každá dáva vínu inú tvár, hoci pôda je všade rovnaká."
+}

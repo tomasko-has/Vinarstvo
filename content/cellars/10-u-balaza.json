@@ -1,0 +1,52 @@
+{
+  "slug": "u-balaza",
+  "name": "U Baláža",
+  "owner": "Štefan Baláž",
+  "isOurs": false,
+  "mapPoint": {
+    "x": 830,
+    "y": 350
+  },
+  "gps": {
+    "lat": 48.200997,
+    "lng": 17.79468
+  },
+  "openingHours": [
+    {
+      "days": [
+        4
+      ],
+      "open": "17:00",
+      "close": "21:00"
+    },
+    {
+      "days": [
+        5
+      ],
+      "open": "16:00",
+      "close": "21:00"
+    },
+    {
+      "days": [
+        6
+      ],
+      "open": "12:00",
+      "close": "21:00"
+    },
+    {
+      "days": [
+        0
+      ],
+      "open": "12:00",
+      "close": "18:00"
+    }
+  ],
+  "features": [
+    "degustacia"
+  ],
+  "story": "Štefan je v uličke najdlhšie. Rád rozpráva, ako sa pivnice kopali ručne.",
+  "image": {
+    "src": "/images/placeholder/pivnica.svg",
+    "alt": "Čelo pivnice U Baláža"
+  }
+}

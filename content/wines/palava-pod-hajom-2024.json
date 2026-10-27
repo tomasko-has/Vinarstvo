@@ -1,0 +1,33 @@
+{
+  "slug": "palava-pod-hajom-2024",
+  "name": "Pálava Pod Hájom",
+  "line": "spras",
+  "variety": "Pálava",
+  "vintage": 2024,
+  "color": "biele",
+  "sweetness": "polosladke",
+  "volumeMl": 750,
+  "priceCents": 1390,
+  "stock": 24,
+  "alcohol": 13,
+  "sugarGl": 18,
+  "acidityGl": 6.2,
+  "vineyard": "Pod Hájom",
+  "description": "Liči, ruža a med. Plné, voňavé víno, ktoré má rado pomalý večer.",
+  "tasting": {
+    "body": 4,
+    "acidity": 3,
+    "fruit": 5
+  },
+  "pairing": [
+    "kačacia pečeň",
+    "dezerty s ovocím"
+  ],
+  "images": [
+    {
+      "src": "/images/placeholder/flasa-biele.svg",
+      "alt": "Fľaša vína Pálava Pod Hájom"
+    }
+  ],
+  "sampleAvailable": true
+}

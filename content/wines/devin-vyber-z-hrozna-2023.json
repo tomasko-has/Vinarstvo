@@ -1,0 +1,33 @@
+{
+  "slug": "devin-vyber-z-hrozna-2023",
+  "name": "Devín, výber z hrozna",
+  "line": "pivnica",
+  "variety": "Devín",
+  "vintage": 2023,
+  "color": "biele",
+  "sweetness": "polosladke",
+  "volumeMl": 750,
+  "priceCents": 1890,
+  "stock": 18,
+  "alcohol": 13,
+  "sugarGl": 22,
+  "acidityGl": 6.9,
+  "vineyard": "Pod Hájom",
+  "description": "Slovenská odroda v najlepšej forme. Kandizované ovocie, korenie a dlhý medový záver.",
+  "tasting": {
+    "body": 5,
+    "acidity": 4,
+    "fruit": 5
+  },
+  "pairing": [
+    "modré syry",
+    "štrúdľa"
+  ],
+  "images": [
+    {
+      "src": "/images/placeholder/flasa-biele.svg",
+      "alt": "Fľaša vína Devín, výber z hrozna"
+    }
+  ],
+  "sampleAvailable": false
+}

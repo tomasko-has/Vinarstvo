@@ -1,0 +1,16 @@
+{
+  "slug": "firemna-trojica",
+  "name": "Firemná trojica",
+  "description": "Tri vína z troch radov v kartónovej krabici s vašou visačkou.",
+  "contents": [
+    "Veltlínske zelené 2025",
+    "Pálava Pod Hájom 2024",
+    "Frankovka modrá 2024",
+    "visačka s textom"
+  ],
+  "priceCents": 4290,
+  "image": {
+    "src": "/images/placeholder/darcek.svg",
+    "alt": "Krabica s tromi fľašami a visačkou"
+  }
+}

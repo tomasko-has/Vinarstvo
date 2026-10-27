@@ -1,0 +1,33 @@
+{
+  "slug": "rizling-rynsky-hlinisko-2024",
+  "name": "Rizling rýnsky Hlinisko",
+  "line": "spras",
+  "variety": "Rizling rýnsky",
+  "vintage": 2024,
+  "color": "biele",
+  "sweetness": "suche",
+  "volumeMl": 750,
+  "priceCents": 1490,
+  "stock": 36,
+  "alcohol": 12.5,
+  "sugarGl": 3.4,
+  "acidityGl": 7.6,
+  "vineyard": "Hlinisko",
+  "description": "Z najstaršej viničnej trate na hlbokej spraši. Marhuľa, lipový kvet a minerálny, slaný záver.",
+  "tasting": {
+    "body": 4,
+    "acidity": 5,
+    "fruit": 4
+  },
+  "pairing": [
+    "pečené kura",
+    "zrejúce syry"
+  ],
+  "images": [
+    {
+      "src": "/images/placeholder/flasa-biele.svg",
+      "alt": "Fľaša vína Rizling rýnsky Hlinisko"
+    }
+  ],
+  "sampleAvailable": true
+}

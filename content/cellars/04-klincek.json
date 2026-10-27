@@ -1,0 +1,53 @@
+{
+  "slug": "klincek",
+  "name": "Vinárstvo Klinček",
+  "owner": "Zuzana Holubová",
+  "isOurs": false,
+  "mapPoint": {
+    "x": 330,
+    "y": 350
+  },
+  "gps": {
+    "lat": 48.200774,
+    "lng": 17.79168
+  },
+  "openingHours": [
+    {
+      "days": [
+        4
+      ],
+      "open": "17:00",
+      "close": "21:00"
+    },
+    {
+      "days": [
+        5
+      ],
+      "open": "16:00",
+      "close": "21:00"
+    },
+    {
+      "days": [
+        6
+      ],
+      "open": "12:00",
+      "close": "21:00"
+    },
+    {
+      "days": [
+        0
+      ],
+      "open": "12:00",
+      "close": "18:00"
+    }
+  ],
+  "features": [
+    "degustacia",
+    "predaj"
+  ],
+  "story": "Najmladšie vinárstvo v uličke. Zuzana robí prírodné vína bez pridanej síry.",
+  "image": {
+    "src": "/images/placeholder/pivnica.svg",
+    "alt": "Čelo pivnice Vinárstvo Klinček"
+  }
+}

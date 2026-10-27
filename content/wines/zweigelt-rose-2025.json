@@ -1,0 +1,32 @@
+{
+  "slug": "zweigelt-rose-2025",
+  "name": "Zweigeltrebe rosé",
+  "line": "ulicka",
+  "variety": "Zweigeltrebe",
+  "vintage": 2025,
+  "color": "ruzove",
+  "sweetness": "polosuche",
+  "volumeMl": 750,
+  "priceCents": 850,
+  "stock": 60,
+  "alcohol": 11.5,
+  "sugarGl": 7.2,
+  "acidityGl": 6.3,
+  "description": "Jahody a ríbezle, chladené rovno z pivnice. Letné víno na terasu.",
+  "tasting": {
+    "body": 2,
+    "acidity": 4,
+    "fruit": 5
+  },
+  "pairing": [
+    "letné šaláty",
+    "lososové tartaletky"
+  ],
+  "images": [
+    {
+      "src": "/images/placeholder/flasa-ruzove.svg",
+      "alt": "Fľaša vína Zweigeltrebe rosé"
+    }
+  ],
+  "sampleAvailable": true
+}

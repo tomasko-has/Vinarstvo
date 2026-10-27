@@ -1,0 +1,32 @@
+{
+  "slug": "frankovka-modra-2024",
+  "name": "Frankovka modrá",
+  "line": "ulicka",
+  "variety": "Frankovka modrá",
+  "vintage": 2024,
+  "color": "cervene",
+  "sweetness": "suche",
+  "volumeMl": 750,
+  "priceCents": 990,
+  "stock": 80,
+  "alcohol": 12.5,
+  "sugarGl": 1.9,
+  "acidityGl": 5.4,
+  "description": "Višne, čierne korenie a šťavnatá kyselina. Červené na grilovanie aj na nedeľný obed.",
+  "tasting": {
+    "body": 3,
+    "acidity": 4,
+    "fruit": 4
+  },
+  "pairing": [
+    "grilované mäso",
+    "guláš"
+  ],
+  "images": [
+    {
+      "src": "/images/placeholder/flasa-cervene.svg",
+      "alt": "Fľaša vína Frankovka modrá"
+    }
+  ],
+  "sampleAvailable": true
+}

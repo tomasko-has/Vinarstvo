@@ -1,0 +1,38 @@
+{
+  "slug": "u-stareho-lisu",
+  "name": "U Starého lisu",
+  "owner": "rodina Šimonova",
+  "isOurs": false,
+  "mapPoint": {
+    "x": 180,
+    "y": 350
+  },
+  "gps": {
+    "lat": 48.200708,
+    "lng": 17.79078
+  },
+  "openingHours": [
+    {
+      "days": [
+        5
+      ],
+      "open": "16:00",
+      "close": "21:00"
+    },
+    {
+      "days": [
+        6
+      ],
+      "open": "12:00",
+      "close": "21:00"
+    }
+  ],
+  "features": [
+    "degustacia"
+  ],
+  "story": "Pri vchode stojí drevený lis z roku 1880. Šimonovci ho každú jeseň ešte raz roztočia.",
+  "image": {
+    "src": "/images/placeholder/pivnica.svg",
+    "alt": "Čelo pivnice U Starého lisu"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "slug": "lipova",
+  "name": "Lipová pivnica",
+  "owner": "Eva a Martin Novákovci",
+  "isOurs": false,
+  "mapPoint": {
+    "x": 750,
+    "y": 250
+  },
+  "gps": {
+    "lat": 48.201661,
+    "lng": 17.7942
+  },
+  "openingHours": [
+    {
+      "days": [
+        5
+      ],
+      "open": "16:00",
+      "close": "21:00"
+    },
+    {
+      "days": [
+        6
+      ],
+      "open": "12:00",
+      "close": "21:00"
+    }
+  ],
+  "features": [
+    "degustacia",
+    "predaj"
+  ],
+  "story": "Lipa nad pivnicou kvitne v júni a vtedy tu robia Lipový večer s cimbalom.",
+  "image": {
+    "src": "/images/placeholder/pivnica.svg",
+    "alt": "Čelo pivnice Lipová pivnica"
+  }
+}

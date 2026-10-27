@@ -1,0 +1,9 @@
+{
+  "id": "vyhliadka",
+  "kind": "vyhliadka",
+  "label": "Vyhliadka nad vinicami",
+  "mapPoint": {
+    "x": 620,
+    "y": 110
+  }
+}

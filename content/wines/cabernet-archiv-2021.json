@@ -1,0 +1,33 @@
+{
+  "slug": "cabernet-archiv-2021",
+  "name": "Cabernet Sauvignon archív",
+  "line": "pivnica",
+  "variety": "Cabernet Sauvignon",
+  "vintage": 2021,
+  "color": "cervene",
+  "sweetness": "suche",
+  "volumeMl": 750,
+  "priceCents": 2490,
+  "stock": 0,
+  "alcohol": 14,
+  "sugarGl": 2.2,
+  "acidityGl": 5.6,
+  "vineyard": "Kamenná",
+  "description": "Čierne ríbezle, tabak a čokoláda. Archívny ročník, ktorý ešte niekoľko rokov porastie.",
+  "tasting": {
+    "body": 5,
+    "acidity": 3,
+    "fruit": 4
+  },
+  "pairing": [
+    "hovädzí steak",
+    "tvrdé syry"
+  ],
+  "images": [
+    {
+      "src": "/images/placeholder/flasa-cervene.svg",
+      "alt": "Fľaša vína Cabernet Sauvignon archív"
+    }
+  ],
+  "sampleAvailable": false
+}

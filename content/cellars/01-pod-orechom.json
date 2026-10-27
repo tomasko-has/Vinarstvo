@@ -1,0 +1,53 @@
+{
+  "slug": "pod-orechom",
+  "name": "Pivnica Pod Orechom",
+  "owner": "Ján Mráz",
+  "isOurs": false,
+  "mapPoint": {
+    "x": 110,
+    "y": 250
+  },
+  "gps": {
+    "lat": 48.201377,
+    "lng": 17.79036
+  },
+  "openingHours": [
+    {
+      "days": [
+        4
+      ],
+      "open": "17:00",
+      "close": "21:00"
+    },
+    {
+      "days": [
+        5
+      ],
+      "open": "16:00",
+      "close": "21:00"
+    },
+    {
+      "days": [
+        6
+      ],
+      "open": "12:00",
+      "close": "21:00"
+    },
+    {
+      "days": [
+        0
+      ],
+      "open": "12:00",
+      "close": "18:00"
+    }
+  ],
+  "features": [
+    "degustacia",
+    "predaj"
+  ],
+  "story": "Pred pivnicou rastie orech starší ako ulička. V lete pod ním Ján nalieva frankovku zo suda.",
+  "image": {
+    "src": "/images/placeholder/pivnica.svg",
+    "alt": "Čelo pivnice Pivnica Pod Orechom"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "slug": "na-sprasi",
+  "name": "Vinárstvo Na Spraši",
+  "owner": "rodina Hlinických",
+  "isOurs": true,
+  "mapPoint": {
+    "x": 590,
+    "y": 250
+  },
+  "gps": {
+    "lat": 48.20159,
+    "lng": 17.79324
+  },
+  "openingHours": [
+    {
+      "days": [
+        3,
+        4
+      ],
+      "open": "15:00",
+      "close": "19:00"
+    },
+    {
+      "days": [
+        5
+      ],
+      "open": "16:00",
+      "close": "21:00"
+    },
+    {
+      "days": [
+        6
+      ],
+      "open": "12:00",
+      "close": "21:00"
+    },
+    {
+      "days": [
+        0
+      ],
+      "open": "12:00",
+      "close": "18:00"
+    }
+  ],
+  "features": [
+    "degustacia",
+    "predaj",
+    "ubytovanie"
+  ],
+  "phone": "+421 900 000 000",
+  "story": "Naša pivnica. Chodba je vykopaná dvanásť metrov do spraše a celý rok v nej je jedenásť stupňov.",
+  "image": {
+    "src": "/images/placeholder/pivnica.svg",
+    "alt": "Čelo pivnice Vinárstvo Na Spraši"
+  },
+  "wines": [
+    "veltlinske-zelene-2025",
+    "rizling-vlassky-2025",
+    "muller-thurgau-2025",
+    "frankovka-modra-2024",
+    "zweigelt-rose-2025",
+    "rizling-rynsky-hlinisko-2024",
+    "palava-pod-hajom-2024",
+    "sauvignon-dlhe-rady-2024",
+    "svatovavrinecke-kamenna-2023",
+    "devin-vyber-z-hrozna-2023",
+    "cabernet-archiv-2021",
+    "sekt-na-sprasi-brut"
+  ]
+}

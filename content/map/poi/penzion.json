@@ -1,0 +1,9 @@
+{
+  "id": "penzion",
+  "kind": "penzion",
+  "label": "Penzión Pri pivnici",
+  "mapPoint": {
+    "x": 760,
+    "y": 420
+  }
+}

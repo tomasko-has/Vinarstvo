@@ -1,0 +1,109 @@
+@import "tailwindcss";
+
+/*
+ * Design tokeny — Vinárstvo Na Spraši
+ * Zdieľané pre všetky sessions. Mení ich len fáza 0 (pozri MASTER_PROMPT.md, sekcia 7).
+ * Paleta vychádza z miesta: sprašová stena, vápnom bielené čelá pivníc, pivničná pleseň, frankovka.
+ */
+@theme {
+  /* Farby */
+  --color-vapno: #f1f2ec;         /* pozadie — vápnom bielené čelo pivnice */
+  --color-vapno-tien: #e2e4dc;    /* jemné plochy, okraje polí */
+  --color-spras: #d4b26a;         /* sprašová stena — veľké farebné plochy */
+  --color-spras-svetla: #e6cf98;  /* horné vrstvy spraše */
+  --color-spras-tmava: #a9874a;   /* spodné vrstvy, okraje na spraši */
+  --color-frankovka: #5b1a33;     /* akcent — tlačidlá, odkazy, ceny */
+  --color-frankovka-hover: #74243f;
+  --color-pivnica: #222823;       /* text a tmavé sekcie — pivničná pleseň */
+  --color-pivnica-makka: #4a5048; /* sekundárny text */
+  --color-listok: #5e6b3a;        /* stav „otvorené“, potvrdenia */
+  --color-chyba: #9b2c1f;         /* chybové hlásenia */
+
+  /* Písma (premenné nastavuje next/font v app/layout.tsx) */
+  --font-display: var(--font-vollkorn), Georgia, "Times New Roman", serif;
+  --font-sans: var(--font-atkinson), system-ui, sans-serif;
+
+  /* Typografická stupnica (Bringhurst): 14 · 17 · 21 · 24 · 36 · 48 · 60 · 72 px */
+  --text-sm: 0.875rem;
+  --text-sm--line-height: 1.45;
+  --text-base: 1.0625rem;
+  --text-base--line-height: 1.6;
+  --text-lg: 1.3125rem;
+  --text-lg--line-height: 1.5;
+  --text-xl: 1.5rem;
+  --text-xl--line-height: 1.35;
+  --text-2xl: 2.25rem;
+  --text-2xl--line-height: 1.15;
+  --text-3xl: 3rem;
+  --text-3xl--line-height: 1.05;
+  --text-4xl: 3.75rem;
+  --text-4xl--line-height: 1;
+  --text-5xl: 4.5rem;
+  --text-5xl--line-height: 0.95;
+
+  /* Tvary: oblúk vchodu do pivnice je opakovaný motív */
+  --radius-ui: 0.375rem;          /* tlačidlá, polia */
+  --radius-panel: 0.75rem;        /* panely, bottom sheet */
+  --radius-obluk: 999px 999px 0 0; /* oblúkový vrch rámu (fotky, vchody) */
+
+  /* Rozloženie */
+  --spacing-gutter: 1rem;         /* okraj na mobile */
+  --container-text: 38rem;        /* max. šírka textu (~70 znakov) */
+  --container-site: 76rem;        /* max. šírka webu */
+  --spacing-tabbar: 4.25rem;      /* výška spodnej lišty na mobile */
+}
+
+@layer base {
+  html {
+    background: var(--color-vapno);
+    color: var(--color-pivnica);
+    font-family: var(--font-sans);
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    font-size: var(--text-base);
+    line-height: var(--text-base--line-height);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+    font-weight: 800;
+    letter-spacing: -0.01em;
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  a {
+    color: inherit;
+  }
+
+  /* Viditeľný fokus pre klávesnicu všade */
+  :focus-visible {
+    outline: 3px solid var(--color-frankovka);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  ::selection {
+    background: var(--color-spras-svetla);
+    color: var(--color-pivnica);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

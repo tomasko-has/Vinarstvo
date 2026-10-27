@@ -1,0 +1,22 @@
+{
+  "slug": "od-sucheho-po-sladke",
+  "name": "Od suchého po sladké",
+  "description": "Šesť vzoriek zoradených podľa cukru. Zistite, kde je vaša hranica.",
+  "samples": [
+    "rizling-vlassky-2025",
+    "veltlinske-zelene-2025",
+    "muller-thurgau-2025",
+    "zweigelt-rose-2025",
+    "palava-pod-hajom-2024",
+    "sauvignon-dlhe-rady-2024"
+  ],
+  "priceCents": 1690,
+  "tastingOrder": [
+    "rizling-vlassky-2025",
+    "sauvignon-dlhe-rady-2024",
+    "veltlinske-zelene-2025",
+    "muller-thurgau-2025",
+    "zweigelt-rose-2025",
+    "palava-pod-hajom-2024"
+  ]
+}

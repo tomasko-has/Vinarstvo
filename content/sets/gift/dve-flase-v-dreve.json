@@ -1,0 +1,15 @@
+{
+  "slug": "dve-flase-v-dreve",
+  "name": "Dve fľaše v drevenej debničke",
+  "description": "Rizling Hlinisko a Svätovavrinecké Kamenná v debničke z agátového dreva.",
+  "contents": [
+    "Rizling rýnsky Hlinisko 2024",
+    "Svätovavrinecké Kamenná 2023",
+    "debnička z agátu"
+  ],
+  "priceCents": 3990,
+  "image": {
+    "src": "/images/placeholder/darcek.svg",
+    "alt": "Drevená debnička s dvomi fľašami"
+  }
+}

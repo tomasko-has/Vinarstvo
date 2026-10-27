@@ -1,0 +1,9 @@
+{
+  "id": "vstup",
+  "kind": "vstup",
+  "label": "Vstup do uličky",
+  "mapPoint": {
+    "x": 40,
+    "y": 300
+  }
+}

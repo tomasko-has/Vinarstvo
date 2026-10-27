@@ -1,0 +1,32 @@
+{
+  "slug": "sekt-na-sprasi-brut",
+  "name": "Sekt Na Spraši brut",
+  "line": "pivnica",
+  "variety": "Rizling rýnsky, Veltlínske zelené",
+  "vintage": 2022,
+  "color": "sumive",
+  "sweetness": "suche",
+  "volumeMl": 750,
+  "priceCents": 1990,
+  "stock": 40,
+  "alcohol": 12,
+  "sugarGl": 6,
+  "acidityGl": 7.4,
+  "description": "Tradičná metóda, 24 mesiacov na kvasniciach. Jemné bublinky, brioška a citrusy.",
+  "tasting": {
+    "body": 3,
+    "acidity": 5,
+    "fruit": 3
+  },
+  "pairing": [
+    "ustrice",
+    "oslavy"
+  ],
+  "images": [
+    {
+      "src": "/images/placeholder/flasa-sumive.svg",
+      "alt": "Fľaša vína Sekt Na Spraši brut"
+    }
+  ],
+  "sampleAvailable": false
+}

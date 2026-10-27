@@ -1,0 +1,33 @@
+{
+  "slug": "veltlinske-zelene-2025",
+  "name": "Veltlínske zelené",
+  "line": "ulicka",
+  "variety": "Veltlínske zelené",
+  "vintage": 2025,
+  "color": "biele",
+  "sweetness": "suche",
+  "volumeMl": 750,
+  "priceCents": 890,
+  "stock": 120,
+  "alcohol": 12,
+  "sugarGl": 2.1,
+  "acidityGl": 6.1,
+  "description": "Svieže a priamočiare, s typickou korenistosťou bieleho korenia. Víno na každý deň aj na prvý pohár v pivnici.",
+  "tasting": {
+    "body": 3,
+    "acidity": 4,
+    "fruit": 3
+  },
+  "pairing": [
+    "opekané klobásky",
+    "langoše",
+    "kozí syr"
+  ],
+  "images": [
+    {
+      "src": "/images/placeholder/flasa-biele.svg",
+      "alt": "Fľaša vína Veltlínske zelené"
+    }
+  ],
+  "sampleAvailable": true
+}

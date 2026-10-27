@@ -1,0 +1,22 @@
+{
+  "slug": "spoznaj-rad-spras",
+  "name": "Spoznaj Rad Spraš",
+  "description": "Štyri viničné trate a jedna pôda. Ochutnajte, ako spraš chutí v rôznych odrodách.",
+  "samples": [
+    "rizling-rynsky-hlinisko-2024",
+    "palava-pod-hajom-2024",
+    "sauvignon-dlhe-rady-2024",
+    "svatovavrinecke-kamenna-2023",
+    "veltlinske-zelene-2025",
+    "frankovka-modra-2024"
+  ],
+  "priceCents": 1990,
+  "tastingOrder": [
+    "veltlinske-zelene-2025",
+    "sauvignon-dlhe-rady-2024",
+    "rizling-rynsky-hlinisko-2024",
+    "palava-pod-hajom-2024",
+    "frankovka-modra-2024",
+    "svatovavrinecke-kamenna-2023"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "koniec-ulicky",
+  "order": 8,
+  "title": "Koniec uličky",
+  "mapPoint": {
+    "x": 940,
+    "y": 300
+  },
+  "gps": {
+    "lat": 48.201396,
+    "lng": 17.79534
+  },
+  "audioUrl": "/audio/guide/08-koniec-ulicky.mp3",
+  "durationSec": 85,
+  "transcript": "Tu ulička končí a začínajú vinice. Ak sa chcete vrátiť inou cestou, chodník popri vinici vás dovedie späť k parkovisku. Ďakujeme, že ste prišli."
+}

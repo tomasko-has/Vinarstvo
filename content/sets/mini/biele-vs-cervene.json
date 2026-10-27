@@ -1,0 +1,22 @@
+{
+  "slug": "biele-vs-cervene",
+  "name": "Biele vs. červené",
+  "description": "Tri biele a tri červené vedľa seba. Na večer s priateľmi a dlhú debatu.",
+  "samples": [
+    "veltlinske-zelene-2025",
+    "rizling-vlassky-2025",
+    "rizling-rynsky-hlinisko-2024",
+    "frankovka-modra-2024",
+    "svatovavrinecke-kamenna-2023",
+    "zweigelt-rose-2025"
+  ],
+  "priceCents": 1690,
+  "tastingOrder": [
+    "rizling-vlassky-2025",
+    "veltlinske-zelene-2025",
+    "rizling-rynsky-hlinisko-2024",
+    "zweigelt-rose-2025",
+    "frankovka-modra-2024",
+    "svatovavrinecke-kamenna-2023"
+  ]
+}

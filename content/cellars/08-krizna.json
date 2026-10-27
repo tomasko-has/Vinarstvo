@@ -1,0 +1,38 @@
+{
+  "slug": "krizna",
+  "name": "Krížna pivnica",
+  "owner": "Ondrej Tóth",
+  "isOurs": false,
+  "mapPoint": {
+    "x": 670,
+    "y": 350
+  },
+  "gps": {
+    "lat": 48.200926,
+    "lng": 17.79372
+  },
+  "openingHours": [
+    {
+      "days": [
+        5
+      ],
+      "open": "16:00",
+      "close": "21:00"
+    },
+    {
+      "days": [
+        6
+      ],
+      "open": "12:00",
+      "close": "21:00"
+    }
+  ],
+  "features": [
+    "predaj"
+  ],
+  "story": "Pomenovaná podľa kamenného kríža na konci chodby. Ondrej predáva len víno, degustácie nerobí.",
+  "image": {
+    "src": "/images/placeholder/pivnica.svg",
+    "alt": "Čelo pivnice Krížna pivnica"
+  }
+}

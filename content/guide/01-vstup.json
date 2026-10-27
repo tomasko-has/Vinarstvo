@@ -1,0 +1,16 @@
+{
+  "id": "vstup",
+  "order": 1,
+  "title": "Vstup do uličky",
+  "mapPoint": {
+    "x": 60,
+    "y": 300
+  },
+  "gps": {
+    "lat": 48.201004,
+    "lng": 17.79006
+  },
+  "audioUrl": "/audio/guide/01-vstup.mp3",
+  "durationSec": 95,
+  "transcript": "Vitajte v Sprašovej uličke. Pred vami je dvanásť pivníc vykopaných do jedného svahu. Ulička je dlhá asi štyristo metrov a celá cesta vám zaberie hodinu, ak sa nikde nezastavíte. Čo sa však ešte nikomu nepodarilo."
+}

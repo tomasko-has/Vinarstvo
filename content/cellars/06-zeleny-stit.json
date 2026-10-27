@@ -1,0 +1,39 @@
+{
+  "slug": "zeleny-stit",
+  "name": "Zelený štít",
+  "owner": "rodina Vargova",
+  "isOurs": false,
+  "mapPoint": {
+    "x": 500,
+    "y": 350
+  },
+  "gps": {
+    "lat": 48.20085,
+    "lng": 17.7927
+  },
+  "openingHours": [
+    {
+      "days": [
+        5
+      ],
+      "open": "16:00",
+      "close": "21:00"
+    },
+    {
+      "days": [
+        6
+      ],
+      "open": "12:00",
+      "close": "21:00"
+    }
+  ],
+  "features": [
+    "degustacia",
+    "ubytovanie"
+  ],
+  "story": "Jediná pivnica so zeleným čelom. Nad ňou majú Vargovci dve izby pre hostí.",
+  "image": {
+    "src": "/images/placeholder/pivnica.svg",
+    "alt": "Čelo pivnice Zelený štít"
+  }
+}

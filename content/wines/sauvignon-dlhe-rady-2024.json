@@ -1,0 +1,33 @@
+{
+  "slug": "sauvignon-dlhe-rady-2024",
+  "name": "Sauvignon Dlhé rady",
+  "line": "spras",
+  "variety": "Sauvignon",
+  "vintage": 2024,
+  "color": "biele",
+  "sweetness": "suche",
+  "volumeMl": 750,
+  "priceCents": 1390,
+  "stock": 2,
+  "alcohol": 13,
+  "sugarGl": 2.6,
+  "acidityGl": 7.1,
+  "vineyard": "Dlhé rady",
+  "description": "Egreš, baza a čerstvo pokosená tráva. Posledné fľaše ročníka.",
+  "tasting": {
+    "body": 3,
+    "acidity": 5,
+    "fruit": 4
+  },
+  "pairing": [
+    "špargľa",
+    "kozí syr"
+  ],
+  "images": [
+    {
+      "src": "/images/placeholder/flasa-biele.svg",
+      "alt": "Fľaša vína Sauvignon Dlhé rady"
+    }
+  ],
+  "sampleAvailable": true
+}

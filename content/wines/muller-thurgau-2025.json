@@ -1,0 +1,32 @@
+{
+  "slug": "muller-thurgau-2025",
+  "name": "Müller Thurgau",
+  "line": "ulicka",
+  "variety": "Müller Thurgau",
+  "vintage": 2025,
+  "color": "biele",
+  "sweetness": "polosuche",
+  "volumeMl": 750,
+  "priceCents": 790,
+  "stock": 140,
+  "alcohol": 11,
+  "sugarGl": 6.5,
+  "acidityGl": 5.6,
+  "description": "Muškátová vôňa, broskyňa a mäkká kyselina. Prvé víno, ktoré ponúkame tým, čo „víno nepijú“.",
+  "tasting": {
+    "body": 2,
+    "acidity": 2,
+    "fruit": 4
+  },
+  "pairing": [
+    "ázijská kuchyňa",
+    "ovocné koláče"
+  ],
+  "images": [
+    {
+      "src": "/images/placeholder/flasa-biele.svg",
+      "alt": "Fľaša vína Müller Thurgau"
+    }
+  ],
+  "sampleAvailable": true
+}

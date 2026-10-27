@@ -1,0 +1,39 @@
+{
+  "slug": "lukacova",
+  "name": "Lukáčova pivnica",
+  "owner": "Jozef Lukáč",
+  "isOurs": false,
+  "mapPoint": {
+    "x": 960,
+    "y": 350
+  },
+  "gps": {
+    "lat": 48.201054,
+    "lng": 17.79546
+  },
+  "openingHours": [
+    {
+      "days": [
+        5
+      ],
+      "open": "16:00",
+      "close": "21:00"
+    },
+    {
+      "days": [
+        6
+      ],
+      "open": "12:00",
+      "close": "21:00"
+    }
+  ],
+  "features": [
+    "degustacia",
+    "predaj"
+  ],
+  "story": "Malá pivnica s veľkými rizlingmi. Jozef otvára aj vo štvrtok večer.",
+  "image": {
+    "src": "/images/placeholder/pivnica.svg",
+    "alt": "Čelo pivnice Lukáčova pivnica"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "slug": "rizling-vlassky-2025",
+  "name": "Rizling vlašský",
+  "line": "ulicka",
+  "variety": "Rizling vlašský",
+  "vintage": 2025,
+  "color": "biele",
+  "sweetness": "suche",
+  "volumeMl": 750,
+  "priceCents": 890,
+  "stock": 95,
+  "alcohol": 11.5,
+  "sugarGl": 1.8,
+  "acidityGl": 6.8,
+  "description": "Zelené jablko, mandle a jemná horkosť na konci. Ľahké, osviežujúce a nenáročné.",
+  "tasting": {
+    "body": 2,
+    "acidity": 4,
+    "fruit": 3
+  },
+  "pairing": [
+    "pstruh na masle",
+    "šaláty"
+  ],
+  "images": [
+    {
+      "src": "/images/placeholder/flasa-biele.svg",
+      "alt": "Fľaša vína Rizling vlašský"
+    }
+  ],
+  "sampleAvailable": true
+}

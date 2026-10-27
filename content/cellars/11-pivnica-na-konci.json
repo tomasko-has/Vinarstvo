@@ -1,0 +1,38 @@
+{
+  "slug": "pivnica-na-konci",
+  "name": "Pivnica Na konci",
+  "owner": "Lucia Poláková",
+  "isOurs": false,
+  "mapPoint": {
+    "x": 900,
+    "y": 250
+  },
+  "gps": {
+    "lat": 48.201728,
+    "lng": 17.7951
+  },
+  "openingHours": [
+    {
+      "days": [
+        5
+      ],
+      "open": "16:00",
+      "close": "21:00"
+    },
+    {
+      "days": [
+        6
+      ],
+      "open": "12:00",
+      "close": "21:00"
+    }
+  ],
+  "features": [
+    "predaj"
+  ],
+  "story": "Posledná pivnica pred vinicami. Z jej strechy je najlepší výhľad na uličku.",
+  "image": {
+    "src": "/images/placeholder/pivnica.svg",
+    "alt": "Čelo pivnice Pivnica Na konci"
+  }
+}

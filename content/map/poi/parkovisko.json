@@ -1,0 +1,9 @@
+{
+  "id": "parkovisko",
+  "kind": "parkovisko",
+  "label": "Parkovisko pri kaplnke",
+  "mapPoint": {
+    "x": 30,
+    "y": 420
+  }
+}

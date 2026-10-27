@@ -1,0 +1,16 @@
+{
+  "id": "co-je-spras",
+  "order": 2,
+  "title": "Čo je spraš",
+  "mapPoint": {
+    "x": 210,
+    "y": 290
+  },
+  "gps": {
+    "lat": 48.201141,
+    "lng": 17.79096
+  },
+  "audioUrl": "/audio/guide/02-co-je-spras.mp3",
+  "durationSec": 130,
+  "transcript": "Spraš je jemný žltý prach, ktorý sem počas dôb ľadových naviali vetry. Je mäkká, keď ju kopete, a pevná, keď ju necháte tak. Preto drží klenbu pivnice bez jediného kameňa a vinič v nej zakorení hlboko."
+}

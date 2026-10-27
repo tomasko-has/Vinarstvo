@@ -1,0 +1,33 @@
+{
+  "slug": "svatovavrinecke-kamenna-2023",
+  "name": "Svätovavrinecké Kamenná",
+  "line": "spras",
+  "variety": "Svätovavrinecké",
+  "vintage": 2023,
+  "color": "cervene",
+  "sweetness": "suche",
+  "volumeMl": 750,
+  "priceCents": 1590,
+  "stock": 30,
+  "alcohol": 13,
+  "sugarGl": 1.7,
+  "acidityGl": 5.2,
+  "vineyard": "Kamenná",
+  "description": "Zrelé slivky, lesná pôda a jemné triesloviny. Rok zrelo v dubových sudoch v pivnici.",
+  "tasting": {
+    "body": 4,
+    "acidity": 3,
+    "fruit": 4
+  },
+  "pairing": [
+    "divina",
+    "pečená kačica"
+  ],
+  "images": [
+    {
+      "src": "/images/placeholder/flasa-cervene.svg",
+      "alt": "Fľaša vína Svätovavrinecké Kamenná"
+    }
+  ],
+  "sampleAvailable": true
+}

@@ -1,0 +1,9 @@
+{
+  "id": "wc",
+  "kind": "wc",
+  "label": "WC",
+  "mapPoint": {
+    "x": 470,
+    "y": 400
+  }
+}
