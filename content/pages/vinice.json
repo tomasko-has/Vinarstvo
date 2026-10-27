@@ -1,0 +1,46 @@
+[
+  {
+    "slug": "hlinisko",
+    "name": "Hlinisko",
+    "areaHa": 1.4,
+    "planted": 1998,
+    "exposure": "juhovýchod",
+    "soil": "Hlboká spraš s kúskom hliny v podloží",
+    "varieties": ["Rizling rýnsky"],
+    "summary": "Najstaršia vinica rodiny. Spraš tu drží vodu, aj keď leto zlyhá.",
+    "story": "Hlinisko kopal ešte starý otec. Pôda je ťažšia než inde, preto rizling dozrieva pomalšie a víno je štíhle a kyselinkavé. Jeden riadok sme pred desiatimi rokmi vymenili, ostatné stoja od začiatku."
+  },
+  {
+    "slug": "pod-hajom",
+    "name": "Pod Hájom",
+    "areaHa": 0.9,
+    "planted": 2006,
+    "exposure": "juh",
+    "soil": "Spraš s vápenatými zrnkami",
+    "varieties": ["Pálava", "Ryzlink vlašský"],
+    "summary": "Chránená pred severným vetrom hájom. Teplá, voňavá vinica.",
+    "story": "Háj nad vinicou drží chlad z noci a v lete zase tieň po obede. Preto sa tu darí voňavým odrodám. Pálavu oberáme zámerne neskôr, kým nezačne voňať po ruži."
+  },
+  {
+    "slug": "dlhe-rady",
+    "name": "Dlhé rady",
+    "areaHa": 2.1,
+    "planted": 2011,
+    "exposure": "juhozápad",
+    "soil": "Piesčitá spraš, rýchlo presychá",
+    "varieties": ["Sauvignon", "Veltlínske zelené"],
+    "summary": "Dlhé rovné rady po svahu. Svieže, bylinkové vína.",
+    "story": "Riadky sú dlhé aj sto metrov a vedú rovno nad uličku. Spraš je tu ľahšia, korene idú hlboko za vodou. Vína sú preto štíhle a trávnaté, presne také, aké chceme do Radu Ulička."
+  },
+  {
+    "slug": "kamenna",
+    "name": "Kamenná",
+    "areaHa": 1.2,
+    "planted": 2003,
+    "exposure": "juh",
+    "soil": "Spraš premiešaná s drobným štrkom",
+    "varieties": ["Svätovavrinecké", "Cabernet Sauvignon"],
+    "summary": "Kamene v pôde uchovávajú teplo. Červené, ktoré potrebujú čas.",
+    "story": "Pri rýľovaní tu vždy narazíte na kameň. Večer sálajú teplo, ktoré hrozno potrebuje na dozretie červených odrôd. Z Kamennej idú vína, ktoré nechávame ležať v pivnici viac rokov."
+  }
+]
