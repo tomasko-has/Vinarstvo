@@ -91,7 +91,7 @@ function CatalogView({
 
   return (
     <div className="lg:grid lg:grid-cols-[14rem_1fr] lg:gap-10 xl:gap-14">
-      <div className="lg:sticky lg:top-24 lg:self-start">
+      <div className="lg:sticky lg:top-20 lg:max-h-[calc(100dvh-6rem)] lg:self-start lg:overflow-y-auto lg:pt-1 lg:pb-4">
         <button
           type="button"
           onClick={() => setPanelOpen((o) => !o)}

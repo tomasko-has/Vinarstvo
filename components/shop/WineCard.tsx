@@ -17,7 +17,7 @@ export function wineMeta(wine: Wine) {
 export function WineCard({ wine }: { wine: Wine }) {
   const soldOut = wine.stock === 0;
   return (
-    <article className="group relative flex flex-col">
+    <article className="group relative flex w-full flex-col">
       <WineImage
         wine={wine}
         sizes="(min-width: 1024px) 18rem, (min-width: 640px) 30vw, 45vw"

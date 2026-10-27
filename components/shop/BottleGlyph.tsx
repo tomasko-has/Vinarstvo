@@ -29,10 +29,10 @@ export function BottleGlyph({ color, className = "" }: { color: WineColor; class
 /** Vzorka 0,1 l v skúmavke pre mini-sety. */
 export function VialGlyph({ color, className = "" }: { color: WineColor; className?: string }) {
   const wine: Record<WineColor, string> = {
-    biele: "var(--color-spras-svetla)",
+    biele: "var(--color-spras)",
     ruzove: "var(--color-frankovka-hover)",
     cervene: "var(--color-frankovka)",
-    sumive: "var(--color-spras)",
+    sumive: "var(--color-spras-tmava)",
   };
   return (
     <svg viewBox="0 0 40 140" className={className} aria-hidden="true">

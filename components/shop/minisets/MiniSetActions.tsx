@@ -155,9 +155,14 @@ export function CustomMiniSet({
               ? `Vyberte ešte ${remaining} ${plural(remaining, ["víno", "vína", "vín"])}.`
               : "Vzorky sme zoradili v poradí, v akom ich odporúčame ochutnať."}
           </p>
-          <Button className="mt-4 w-full bg-spras text-pivnica hover:bg-spras-svetla" disabled={!valid} onClick={submit}>
+          <button
+            type="button"
+            disabled={!valid}
+            onClick={submit}
+            className="mt-4 inline-flex min-h-11 w-full items-center justify-center rounded-(--radius-ui) bg-spras px-4 py-2 font-bold text-pivnica transition-colors hover:bg-spras-svetla disabled:cursor-not-allowed disabled:opacity-50"
+          >
             Vložiť mini-set do košíka
-          </Button>
+          </button>
         </div>
         {added && (
           <p aria-live="polite" className="mt-3 text-sm">

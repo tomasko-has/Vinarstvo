@@ -163,6 +163,7 @@ function CartonBuilder({
   const submit = () => {
     if (!full) return;
     saveCarton([...bottles], editingId);
+    setNotice(null);
     if (editingId) {
       router.push("/kosik");
       return;
@@ -227,9 +228,12 @@ function CartonBuilder({
               Kartón je v košíku.
             </p>
             <div className="mt-3 flex flex-wrap gap-3">
-              <ButtonLink href="/kosik" className="bg-vapno text-pivnica hover:bg-vapno-tien">
+              <Link
+                href="/kosik"
+                className="inline-flex min-h-11 items-center rounded-(--radius-ui) bg-vapno px-4 font-bold text-pivnica hover:bg-vapno-tien"
+              >
                 Prejsť do košíka
-              </ButtonLink>
+              </Link>
               <button
                 type="button"
                 onClick={empty}
