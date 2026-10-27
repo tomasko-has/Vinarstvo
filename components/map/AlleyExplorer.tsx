@@ -93,7 +93,7 @@ export function AlleyExplorer({
       setPicked(slug);
       // Na mobile prekryje spodok mapy bottom sheet, preto pivnicu posunieme vyššie
       const narrow = map.current?.isNarrow() ?? false;
-      map.current?.flyTo(cellar.mapPoint, { offsetY: narrow ? window.innerHeight * 0.2 : 0 });
+      map.current?.flyTo(cellar.mapPoint, { offsetY: narrow ? window.innerHeight * 0.22 : 0 });
     },
     [cellars],
   );
@@ -105,7 +105,7 @@ export function AlleyExplorer({
 
   useEffect(() => {
     const cellar = cellars.find((c) => c.slug === urlSlug);
-    if (cellar) map.current?.flyTo(cellar.mapPoint, { offsetY: map.current.isNarrow() ? window.innerHeight * 0.2 : 0 });
+    if (cellar) map.current?.flyTo(cellar.mapPoint, { offsetY: map.current.isNarrow() ? window.innerHeight * 0.22 : 0 });
   }, [cellars, urlSlug]);
 
   const toggleFilter = (f: Filter) =>
@@ -231,7 +231,7 @@ export function AlleyExplorer({
                 <circle r={accuracy} fill="var(--color-frankovka)" opacity="0.12" stroke="var(--color-frankovka)" strokeOpacity="0.4" />
                 <g className={markerScale}>
                   <circle r="14" fill="var(--color-frankovka)" opacity="0.25" className="motion-safe:animate-ping [transform-box:fill-box] [transform-origin:center]" />
-                  <circle r="7.5" fill="var(--color-frankovka)" stroke="var(--color-vapno)" strokeWidth="3" />
+                  <circle r="9" fill="var(--color-frankovka)" stroke="var(--color-vapno)" strokeWidth="3" />
                   <text y="-15" textAnchor="middle" fontSize="12" fontWeight="700" {...halo} fill="var(--color-frankovka)">
                     Tu ste
                   </text>
@@ -323,7 +323,7 @@ export function AlleyExplorer({
       {current && (
         <aside
           aria-label="Profil pivnice"
-          className={`fixed inset-x-0 bottom-(--spacing-tabbar) z-30 flex max-h-[62svh] flex-col rounded-t-(--radius-panel) bg-vapno shadow-[0_-6px_24px_rgb(34_40_35/0.18)] ${styles.sheet} lg:top-16 lg:right-0 lg:bottom-0 lg:left-auto lg:max-h-none lg:w-[25rem] lg:rounded-none lg:border-l-2 lg:border-spras-tmava/30 lg:shadow-none`}
+          className={`fixed inset-x-0 bottom-(--spacing-tabbar) z-30 flex max-h-[55svh] flex-col rounded-t-(--radius-panel) bg-vapno shadow-[0_-6px_24px_rgb(34_40_35/0.18)] ${styles.sheet} lg:top-16 lg:right-0 lg:bottom-0 lg:left-auto lg:max-h-none lg:w-[25rem] lg:rounded-none lg:border-l-2 lg:border-spras-tmava/30 lg:shadow-none`}
         >
           <CellarProfile
             key={current.slug}
@@ -389,7 +389,7 @@ function GeoNotice({
     );
 
   return (
-    <div role="status" aria-live="polite" className="pointer-events-none absolute bottom-4 left-(--spacing-gutter) max-w-[min(20rem,calc(100%-13rem))]">
+    <div role="status" aria-live="polite" className="pointer-events-none absolute right-[4.75rem] bottom-4 left-(--spacing-gutter) lg:right-auto lg:max-w-80">
       {message && (
         <p className="pointer-events-auto rounded-(--radius-panel) bg-pivnica px-4 py-3 text-sm text-vapno shadow-[0_2px_0_var(--color-spras-tmava)]">
           {message}

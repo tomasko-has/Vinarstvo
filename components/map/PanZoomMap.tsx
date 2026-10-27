@@ -23,6 +23,7 @@ export type PanZoomHandle = {
   flyTo: (p: MapPoint, opts?: { scale?: number; offsetY?: number }) => void;
   /** Zobrazí bod, ak je mimo viditeľnej časti. */
   reveal: (p: MapPoint) => void;
+  /** Mobilné rozloženie s bottom sheetom */
   isNarrow: () => boolean;
 };
 
@@ -61,8 +62,13 @@ export function PanZoomMap({
     const s = Math.min(Math.max(v.s, MIN_S), fitScale());
     const vw = w * s;
     const vh = h * s;
-    const cx = vw >= MAP_WIDTH ? MAP_WIDTH / 2 : Math.min(Math.max(v.cx, vw / 2), MAP_WIDTH - vw / 2);
-    const cy = vh >= MAP_HEIGHT ? MAP_HEIGHT / 2 : Math.min(Math.max(v.cy, vh / 2), MAP_HEIGHT - vh / 2);
+    // Ak je mapa menšia než okno, smie sa posúvať len tak, aby celá ostala viditeľná
+    const range = (view: number, map: number) =>
+      view >= map ? [map - view / 2, view / 2] : [view / 2, map - view / 2];
+    const [x0, x1] = range(vw, MAP_WIDTH);
+    const [y0, y1] = range(vh, MAP_HEIGHT);
+    const cx = Math.min(Math.max(v.cx, x0), x1);
+    const cy = Math.min(Math.max(v.cy, y0), y1);
     return { cx, cy, s };
   }, []);
 
@@ -142,7 +148,8 @@ export function PanZoomMap({
         Math.abs(p.x - v.cx) < (w * v.s) / 2 - margin && Math.abs(p.y - v.cy) < (h * v.s) / 2 - margin;
       if (!inside) animateTo({ ...v, cx: p.x, cy: p.y });
     },
-    isNarrow: () => size.current.w < 1024,
+    // rovnaký zlom ako lg: v Tailwinde (bottom sheet vs. bočný panel)
+    isNarrow: () => !window.matchMedia("(min-width: 64rem)").matches,
   }));
 
   // Veľkosť kontajnera

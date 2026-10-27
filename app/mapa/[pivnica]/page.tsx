@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { Suspense } from "react";
 import { OpenStatus, WeekHours } from "@/components/map/CellarHours";
 import { mapGeometry } from "@/components/map/data";
 import { MapIcon } from "@/components/map/icons";
@@ -51,7 +52,39 @@ function structuredData(cellar: Cellar) {
   };
 }
 
-export default async function Page({ params }: PageProps<"/mapa/[pivnica]">) {
+// params čítame až vo vnútri <Suspense>, aby navigácia na detail mohla hneď ukázať kostru stránky
+export default function Page({ params }: PageProps<"/mapa/[pivnica]">) {
+  return (
+    <Suspense fallback={<DetailSkeleton />}>
+      <CellarDetail params={params} />
+    </Suspense>
+  );
+}
+
+function DetailSkeleton() {
+  return (
+    <Container className="py-6 lg:py-10" aria-busy="true">
+      <BackLink />
+      <div className="mt-4 grid gap-8 lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] lg:gap-14">
+        <ArchFrame ratio="4/5" className="w-40 sm:w-56 lg:w-full">
+          <span className="sr-only">Načítavame profil pivnice…</span>
+        </ArchFrame>
+        <div className="h-40 rounded-(--radius-panel) bg-vapno-tien" />
+      </div>
+    </Container>
+  );
+}
+
+function BackLink() {
+  return (
+    <Link href="/mapa" className="inline-flex min-h-11 items-center gap-2 font-bold text-pivnica-makka hover:text-frankovka">
+      <MapIcon name="back" className="size-5" />
+      Mapa uličky
+    </Link>
+  );
+}
+
+async function CellarDetail({ params }: { params: PageProps<"/mapa/[pivnica]">["params"] }) {
   const { pivnica } = await params;
   const [cellar, cellars, anchors, pois, wines] = await Promise.all([
     getCellar(pivnica),
@@ -75,14 +108,11 @@ export default async function Page({ params }: PageProps<"/mapa/[pivnica]">) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData(cellar)).replace(/</g, "\\u003c") }}
       />
-      <Link href="/mapa" className="inline-flex min-h-11 items-center gap-2 font-bold text-pivnica-makka hover:text-frankovka">
-        <MapIcon name="back" className="size-5" />
-        Mapa uličky
-      </Link>
+      <BackLink />
 
       <div className="mt-4 grid gap-8 lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] lg:gap-14">
         <div>
-          <ArchFrame ratio="4/5" className="mx-auto w-full max-w-sm lg:max-w-none">
+          <ArchFrame ratio="4/5" className="w-40 sm:w-56 lg:w-full">
             <Image src={cellar.image.src} alt={cellar.image.alt} fill unoptimized priority className="object-cover" />
           </ArchFrame>
         </div>
