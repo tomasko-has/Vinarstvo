@@ -2,6 +2,7 @@
   "cartonSize": 6,
   "cartonDiscountPct": 10,
   "sampleVolumeMl": 100,
+  "customMiniSetPriceCents": 1790,
   "recommendedCartons": [
     {
       "slug": "biely-mix",
