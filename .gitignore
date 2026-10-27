@@ -1,0 +1,51 @@
+# dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Next.js / build
+.next/
+out/
+build/
+dist/
+
+# Serwist / PWA generated
+public/sw.js
+public/sw.js.map
+public/swe-worker-*.js
+
+# env (secrets nikdy do repa)
+.env
+.env.*
+!.env.example
+
+# Vercel
+.vercel
+
+# testy
+coverage/
+test-results/
+playwright-report/
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+# logy
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OS / editory
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json
+
+# Claude Code lokálne nastavenia
+.claude/settings.local.json
+
+# spec ostáva len lokálne
+MASTER_PROMPT.md
