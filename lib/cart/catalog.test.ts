@@ -76,3 +76,13 @@ describe("odrody a sklad", () => {
     expect(stockStatus(40)).toBe("skladom");
   });
 });
+
+describe("lokálne popisky", () => {
+  it("pokrývajú všetky hodnoty enumov zo schém", async () => {
+    const { sweetnessSchema, wineColorSchema, wineLineSchema } = await import("@/lib/schemas");
+    const labels = await import("./labels");
+    expect(labels.wineLines).toEqual(wineLineSchema.options);
+    expect(labels.wineColors).toEqual(wineColorSchema.options);
+    expect(labels.sweetnesses).toEqual(sweetnessSchema.options);
+  });
+});

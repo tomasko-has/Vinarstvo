@@ -1,13 +1,6 @@
 // Filtre a radenie katalógu. Stav filtrov žije v URL (zdieľateľné odkazy), preto parse/serialize.
-import {
-  sweetnessSchema,
-  wineColorSchema,
-  wineLineSchema,
-  type Sweetness,
-  type Wine,
-  type WineColor,
-  type WineLine,
-} from "@/lib/schemas";
+import type { Sweetness, Wine, WineColor, WineLine } from "@/lib/schemas";
+import { sweetnesses, wineColors, wineLines } from "./labels";
 
 export const sortKeys = ["odporucane", "cena-vzostupne", "cena-zostupne", "rocnik", "nazov"] as const;
 export type SortKey = (typeof sortKeys)[number];
@@ -80,9 +73,9 @@ function list<T extends string>(params: Readable, name: string, allowed?: readon
 export function parseFilters(params: Readable): CatalogFilters {
   const sort = params.get(filterParams.sort) as SortKey | null;
   return {
-    line: list(params, filterParams.line, wineLineSchema.options),
-    color: list(params, filterParams.color, wineColorSchema.options),
-    sweetness: list(params, filterParams.sweetness, sweetnessSchema.options),
+    line: list(params, filterParams.line, wineLines),
+    color: list(params, filterParams.color, wineColors),
+    sweetness: list(params, filterParams.sweetness, sweetnesses),
     variety: list(params, filterParams.variety),
     sort: sort && sortKeys.includes(sort) ? sort : "odporucane",
   };
