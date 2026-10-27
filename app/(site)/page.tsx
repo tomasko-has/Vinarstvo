@@ -6,7 +6,7 @@ import { site } from "@/lib/site";
 // Úvodná sekcia z fázy 0. Ďalšie sekcie domovskej stránky doplní session C.
 export default function HomePage() {
   return (
-    <section aria-labelledby="hero-nadpis" className="relative overflow-hidden">
+    <section aria-labelledby="hero-nadpis" className="relative -mb-24 overflow-hidden">
       <Container className="relative z-10 pt-12 sm:pt-20 lg:pt-24">
         <div className="max-w-xl">
           <p className="mb-4 font-bold text-pivnica-makka">
