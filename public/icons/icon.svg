@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" fill="#5b1a33"/>
+  <!-- vrstvy spraše -->
+  <path d="M0 352 C90 336 170 360 260 346 S440 332 512 348 V512 H0Z" fill="#e6cf98"/>
+  <path d="M0 400 C100 384 190 410 280 398 S450 386 512 400 V512 H0Z" fill="#d4b26a"/>
+  <path d="M0 448 C110 436 200 458 300 448 S460 438 512 450 V512 H0Z" fill="#a9874a"/>
+  <!-- vstup do pivnice -->
+  <path d="M168 372 V232 a88 88 0 0 1 176 0 V372Z" fill="#f1f2ec"/>
+  <path d="M192 372 V236 a64 64 0 0 1 128 0 V372Z" fill="#222823"/>
+  <circle cx="256" cy="150" r="9" fill="#5b1a33"/>
+  <circle cx="294" cy="316" r="7" fill="#d4b26a"/>
+</svg>
