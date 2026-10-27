@@ -1,6 +1,6 @@
 {
   "id": "studna",
-  "order": 5,
+  "order": 4,
   "title": "Studňa",
   "mapPoint": {
     "x": 260,
@@ -10,7 +10,7 @@
     "lat": 48.201233,
     "lng": 17.79126
   },
-  "audioUrl": "/audio/guide/05-studna.mp3",
+  "audioUrl": "/audio/guide/04-studna.mp3",
   "durationSec": 90,
   "transcript": "Studňa slúžila celej uličke. Voda z nej sa používala na umývanie sudov a v horúcich dňoch aj na chladenie fliaš pred pivnicou."
 }
