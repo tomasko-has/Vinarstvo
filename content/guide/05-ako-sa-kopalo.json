@@ -1,6 +1,6 @@
 {
   "id": "ako-sa-kopalo",
-  "order": 3,
+  "order": 5,
   "title": "Ako sa kopali pivnice",
   "mapPoint": {
     "x": 360,
@@ -10,7 +10,7 @@
     "lat": 48.201138,
     "lng": 17.79186
   },
-  "audioUrl": "/audio/guide/03-ako-sa-kopalo.mp3",
+  "audioUrl": "/audio/guide/05-ako-sa-kopalo.mp3",
   "durationSec": 150,
   "transcript": "Pivnice sa kopali ručne, motykou a lopatou, zvyčajne v zime, keď nebolo čo robiť vo vinici. Jedna chodba zabrala celú rodinu aj niekoľko zím. Zemina sa vozila fúrikmi a rozhadzovala po poliach."
 }

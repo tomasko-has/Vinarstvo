@@ -3,12 +3,12 @@
   "order": 2,
   "title": "Čo je spraš",
   "mapPoint": {
-    "x": 210,
+    "x": 120,
     "y": 290
   },
   "gps": {
-    "lat": 48.201141,
-    "lng": 17.79096
+    "lat": 48.201101,
+    "lng": 17.79042
   },
   "audioUrl": "/audio/guide/02-co-je-spras.mp3",
   "durationSec": 130,
