@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Atkinson_Hyperlegible_Next, Vollkorn } from "next/font/google";
+import { OfflineProvider } from "@/components/offline/OfflineProvider";
 import { MobileTabBar } from "@/components/layout/NavLinks";
 import { SiteFooter } from "@/components/layout/SiteFooter";
 import { SiteHeader } from "@/components/layout/SiteHeader";
@@ -28,6 +29,7 @@ export const metadata: Metadata = {
   description:
     "Rodinné vinárstvo v Sprašovej uličke. Vína z vlastných viníc, kartóny na mieru, degustačné mini-sety a audio sprievodca uličkou pivníc.",
   applicationName: site.name,
+  icons: { apple: "/icons/apple-touch-icon.png" },
 };
 
 export const viewport: Viewport = {
@@ -44,6 +46,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         >
           Preskočiť na obsah
         </a>
+        <OfflineProvider />
         <SiteHeader />
         <main id="obsah" className="flex-1">
           {children}

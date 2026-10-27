@@ -12,6 +12,10 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Worktree kópie paralelných sessions a vygenerovaný service worker
+    ".claude/**",
+    "public/sw.js",
+    "public/swe-worker-*.js",
   ]),
 ]);
 

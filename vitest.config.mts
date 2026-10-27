@@ -3,10 +3,10 @@ import { defineConfig } from "vitest/config";
 
 export default defineConfig({
   resolve: {
-    alias: { "@": path.resolve(__dirname) },
+    alias: { "@": path.resolve(import.meta.dirname) },
   },
   test: {
     include: ["**/*.test.ts"],
-    exclude: ["node_modules/**", ".next/**"],
+    exclude: ["node_modules/**", ".next/**", ".claude/**"],
   },
 });
