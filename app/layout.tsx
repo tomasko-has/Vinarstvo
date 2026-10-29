@@ -30,6 +30,8 @@ export const metadata: Metadata = {
     "Rodinné vinárstvo v Sprašovej uličke. Vína z vlastných viníc, kartóny na mieru, degustačné mini-sety a audio sprievodca uličkou pivníc.",
   applicationName: site.name,
   icons: { apple: "/icons/apple-touch-icon.png" },
+  // Obsah je zatiaľ vymyslený. Pred spustením webu tento riadok odstráň.
+  robots: { index: false, follow: false },
 };
 
 export const viewport: Viewport = {
