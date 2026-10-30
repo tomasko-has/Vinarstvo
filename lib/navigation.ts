@@ -12,14 +12,14 @@ export const mainNav: NavItem[] = [
   { href: "/kontakt", label: "Kontakt" },
 ];
 
-export type TabIcon = "map" | "guide" | "bottle" | "cart";
+export type TabIcon = "map" | "guide" | "bottle";
 
 // Spodná lišta na mobile: to, čo návštevník v uličke potrebuje jednou rukou.
+// Košík tu nie je: zobrazuje sa len v e-shope (podnavigácia v components/shop/ShopNav.tsx).
 export const tabBar: (NavItem & { icon: TabIcon })[] = [
   { href: "/mapa", label: "Mapa", icon: "map" },
   { href: "/sprievodca", label: "Sprievodca", icon: "guide" },
   { href: "/e-shop", label: "E-shop", icon: "bottle" },
-  { href: "/kosik", label: "Košík", icon: "cart" },
 ];
 
 export const footerNav: { title: string; items: NavItem[] }[] = [

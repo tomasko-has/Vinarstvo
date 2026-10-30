@@ -3,7 +3,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useMemo, type ReactNode } from "react";
-import { BottleGlyph, VialGlyph } from "@/components/shop/BottleGlyph";
+import { BottleIllustration } from "@/components/illustration/BottleIllustration";
+import { VialGlyph } from "@/components/shop/BottleGlyph";
 import { QtyStepper } from "@/components/shop/QtyStepper";
 import { WineImage } from "@/components/shop/WineImage";
 import { Button, ButtonLink } from "@/components/ui/Button";
@@ -283,7 +284,7 @@ function CartonThumb({ bottles, catalog }: { bottles: readonly string[]; catalog
         const wine = catalog.wines.get(slug);
         return (
           <div key={i} className="flex aspect-[3/4] items-end justify-center rounded-t-full bg-spras-tmava">
-            {wine && <BottleGlyph color={wine.color} className="h-[90%] w-auto" />}
+            {wine && <BottleIllustration wine={wine} bare className="h-[90%] w-auto" />}
           </div>
         );
       })}

@@ -166,14 +166,17 @@ export function BottleIllustration({
   wine,
   label,
   className = "",
+  bare = false,
 }: {
   wine: BottleWine;
   /** Popis pre čítačky obrazovky. */
   label?: string;
   className?: string;
+  /** Len fľaša bez pozadia a tieňa, orezaná na jej rozmery (pre kartón, košík a zoznamy). */
+  bare?: boolean;
 }) {
   const shape = shapeFor(wine.color);
-  const dark = wine.line === "pivnica";
+  const dark = wine.line === "pivnica" && !bare;
   const outline = dark ? "var(--color-spras)" : "var(--color-pivnica)";
   const offsetInk = dark ? "var(--color-vapno)" : "var(--color-spras-tmava)";
   const capsule =
@@ -181,15 +184,15 @@ export function BottleIllustration({
 
   return (
     <svg
-      viewBox="0 0 300 400"
-      preserveAspectRatio="xMidYMax slice"
+      viewBox={bare ? "84 0 132 356" : "0 0 300 400"}
+      preserveAspectRatio={bare ? "xMidYMax meet" : "xMidYMax slice"}
       className={className}
       role={label ? "img" : undefined}
       aria-label={label}
       aria-hidden={label ? undefined : true}
     >
-      <Backdrop line={wine.line} />
-      <ellipse cx="150" cy={GROUND_Y} rx="68" ry="5.5" fill={outline} opacity="0.28" />
+      {!bare && <Backdrop line={wine.line} />}
+      {!bare && <ellipse cx="150" cy={GROUND_Y} rx="68" ry="5.5" fill={outline} opacity="0.28" />}
       {/* fľaša je o desatinu väčšia než jej kresba, aby vyplnila rám */}
       <g transform={`translate(150 ${GROUND_Y}) scale(1.1) translate(-150 -${GROUND_Y})`}>
       {/* druhý atrament: posunutý tvar, ako pri tlači z dvoch platní */}

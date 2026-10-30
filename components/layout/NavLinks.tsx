@@ -4,7 +4,6 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Suspense } from "react";
 import { Icon } from "@/components/ui/Icon";
-import { useCartCount } from "@/lib/cart/store";
 import { isActive, mainNav, tabBar } from "@/lib/navigation";
 
 // usePathname s Cache Components potrebuje Suspense. Fallback je rovnaká navigácia bez zvýraznenia.
@@ -47,9 +46,8 @@ export function DesktopNav() {
 }
 
 function TabBarInner({ pathname }: { pathname: string | null }) {
-  const count = useCartCount();
   return (
-    <ul className="grid h-full grid-cols-4">
+    <ul className="grid h-full grid-cols-3">
       {tabBar.map((item) => {
         const active = pathname ? isActive(pathname, item.href) : false;
         return (
@@ -62,16 +60,8 @@ function TabBarInner({ pathname }: { pathname: string | null }) {
               }`}
             >
               {active && <span className="absolute inset-x-5 top-0 h-1 rounded-b-full bg-spras" aria-hidden="true" />}
-              <span className="relative">
-                <Icon name={item.icon} />
-                {item.icon === "cart" && count > 0 && (
-                  <span className="absolute -top-1.5 -right-2.5 grid min-w-5 place-items-center rounded-full bg-spras px-1 text-xs leading-5 text-pivnica">
-                    {count}
-                  </span>
-                )}
-              </span>
+              <Icon name={item.icon} />
               {item.label}
-              {item.icon === "cart" && count > 0 && <span className="sr-only">, položiek: {count}</span>}
             </Link>
           </li>
         );
@@ -94,24 +84,5 @@ export function MobileTabBar() {
         <TabBarActive />
       </Suspense>
     </nav>
-  );
-}
-
-export function CartLink() {
-  const count = useCartCount();
-  return (
-    <Link
-      href="/kosik"
-      className="inline-flex min-h-11 items-center gap-2 rounded-(--radius-ui) px-3 font-bold text-pivnica hover:bg-vapno-tien"
-    >
-      <Icon name="cart" />
-      Košík
-      {count > 0 && (
-        <span className="grid min-w-6 place-items-center rounded-full bg-frankovka px-1.5 text-sm leading-6 text-vapno">
-          {count}
-          <span className="sr-only"> položiek</span>
-        </span>
-      )}
-    </Link>
   );
 }

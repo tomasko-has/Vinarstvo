@@ -19,7 +19,7 @@ import { reservedBottles } from "@/lib/cart/items";
 import { useCartItems, useCartStore, useHydrated } from "@/lib/cart/store";
 import type { ShopConfig, Wine } from "@/lib/schemas";
 import { wineMeta } from "../WineCard";
-import { BottleGlyph } from "../BottleGlyph";
+import { BottleIllustration } from "@/components/illustration/BottleIllustration";
 import { QtyStepper } from "../QtyStepper";
 import { ShopIcon } from "../ShopIcon";
 import { CartonBox, CartonBoxSkeleton } from "./CartonBox";
@@ -302,7 +302,7 @@ function CartonBuilder({
                     <span className="flex h-10 items-end gap-0.5" aria-hidden="true">
                       {carton.bottles.map((slug, i) => {
                         const w = index.get(slug);
-                        return w ? <BottleGlyph key={i} color={w.color} className="h-10 w-auto" /> : null;
+                        return w ? <BottleIllustration key={i} wine={w} bare className="h-10 w-auto" /> : null;
                       })}
                     </span>
                     <span className="mt-3 font-display text-lg font-bold">{carton.name}</span>
@@ -339,7 +339,7 @@ function CartonBuilder({
                   }}
                   className={`flex items-center gap-3 py-3 sm:gap-4 ${soldOut ? "opacity-55" : "lg:cursor-grab"}`}
                 >
-                  <BottleGlyph color={wine.color} className="h-14 w-auto shrink-0" />
+                  <BottleIllustration wine={wine} bare className="h-14 w-auto shrink-0" />
                   <div className="min-w-0 flex-1">
                     <p className="font-bold leading-snug">
                       <Link href={`/e-shop/${wine.slug}`} className="hover:text-frankovka hover:underline">

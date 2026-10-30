@@ -4,6 +4,8 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Suspense } from "react";
 import { Container } from "@/components/ui/Container";
+import { Icon } from "@/components/ui/Icon";
+import { useCartCount } from "@/lib/cart/store";
 
 const items = [
   { href: "/e-shop", label: "Vína" },
@@ -49,14 +51,37 @@ function ShopNavActive() {
   return <ShopNavInner pathname={usePathname()} />;
 }
 
+/** Košík je len v e-shope: tu, kde sa dá niečo kúpiť. Mimo e-shopu ho web nezobrazuje. */
+function CartLink() {
+  const count = useCartCount();
+  return (
+    <Link
+      href="/kosik"
+      className="flex min-h-12 shrink-0 items-center gap-2 border-l border-vapno-tien pr-1 pl-4 font-bold text-pivnica transition-colors hover:text-frankovka"
+    >
+      <Icon name="cart" />
+      Košík
+      {count > 0 && (
+        <span className="grid min-w-6 place-items-center rounded-full bg-frankovka px-1.5 text-sm leading-6 text-vapno">
+          {count}
+          <span className="sr-only"> položiek</span>
+        </span>
+      )}
+    </Link>
+  );
+}
+
 /** Podnavigácia e-shopu. usePathname s Cache Components potrebuje Suspense. */
 export function ShopNav() {
   return (
     <nav aria-label="E-shop" className="border-b border-vapno-tien">
-      <Container>
-        <Suspense fallback={<ShopNavInner pathname={null} />}>
-          <ShopNavActive />
-        </Suspense>
+      <Container className="flex items-center">
+        <div className="min-w-0 flex-1">
+          <Suspense fallback={<ShopNavInner pathname={null} />}>
+            <ShopNavActive />
+          </Suspense>
+        </div>
+        <CartLink />
       </Container>
     </nav>
   );
