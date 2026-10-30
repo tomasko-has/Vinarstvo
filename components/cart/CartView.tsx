@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useMemo, type ReactNode } from "react";
 import { BottleGlyph, VialGlyph } from "@/components/shop/BottleGlyph";
 import { QtyStepper } from "@/components/shop/QtyStepper";
+import { WineImage } from "@/components/shop/WineImage";
 import { Button, ButtonLink } from "@/components/ui/Button";
 import { countBySlug } from "@/lib/cart/carton";
 import { formatPrice, plural } from "@/lib/cart/format";
@@ -119,9 +120,7 @@ function CartLine({ item, items, catalog }: { item: CartItem; items: CartItem[];
       return (
         <LineLayout
           visual={
-            <div className="relative aspect-[3/4] w-full overflow-hidden rounded-(--radius-obluk) bg-spras-svetla">
-              {wine.images[0] && <Image src={wine.images[0].src} alt="" fill sizes="5rem" className="object-cover" />}
-            </div>
+            <WineImage wine={wine} sizes="5rem" className="w-full" />
           }
           title={
             <Link href={`/e-shop/${wine.slug}`} className="hover:text-frankovka hover:underline">

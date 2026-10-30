@@ -1,6 +1,6 @@
-import Image from "next/image";
 import Link from "next/link";
 import { Suspense } from "react";
+import { CellarFront } from "@/components/illustration/CellarFront";
 import { JsonLd } from "@/components/content/JsonLd";
 import { NewsCard } from "@/components/content/NewsCard";
 import { Section, SectionHeading } from "@/components/content/Section";
@@ -11,6 +11,7 @@ import { ButtonLink } from "@/components/ui/Button";
 import { ArchFrame } from "@/components/ui/ArchFrame";
 import { Container } from "@/components/ui/Container";
 import { Icon } from "@/components/ui/Icon";
+import { Picture } from "@/components/ui/Picture";
 import { LoessSlope } from "@/components/ui/LoessSlope";
 import { getNews, getWines } from "@/lib/content";
 import { site } from "@/lib/site";
@@ -21,6 +22,9 @@ export const metadata = pageMetadata({
     "Rodinné vinárstvo v Sprašovej uličke. Vína z vlastných viníc, degustácie v pivnici vykopanej do spraše a audio sprievodca uličkou.",
   path: "/",
 });
+
+// Fotka v úvode. Licencia: Unsplash (voľné použitie). Autor je uvedený pod úvodom.
+const heroPhoto = { src: "/images/photos/hero-cellar.jpg", alt: "" };
 
 // Vína, ktoré návštevníkom odporúčame ako prvé: po jednom z každého radu.
 const featuredSlugs = ["rizling-rynsky-hlinisko-2024", "palava-pod-hajom-2024", "frankovka-modra-2024"];
@@ -46,15 +50,18 @@ export default function HomePage() {
         }}
       />
 
-      {/* Úvodná sekcia z fázy 0 — vzhľad sa nemení */}
-      <section aria-labelledby="hero-nadpis" className="relative -mb-24 overflow-hidden">
-        <Container className="relative z-10 pt-12 sm:pt-20 lg:pt-24">
+      {/* Úvod: fotka chodby pivnice. Fotku vymeníte zmenou `heroPhoto` hore v súbore. */}
+      <section aria-labelledby="hero-nadpis" className="relative isolate overflow-hidden bg-pivnica text-vapno">
+        <Picture photo={heroPhoto} priority sizes="100vw" fallback={null} />
+        {/* Tmavá vrstva zaručí čitateľný text na ktorejkoľvek fotke. */}
+        <div aria-hidden="true" className="absolute inset-0 bg-pivnica/60" />
+        <Container className="relative z-10 flex min-h-[30rem] flex-col justify-center py-20 sm:min-h-[36rem] lg:min-h-[42rem]">
           <div className="max-w-xl">
-            <p className="mb-4 font-bold text-pivnica-makka">Rodinné vinárstvo {site.laneIn}</p>
+            <p className="mb-4 font-bold text-spras-svetla">Rodinné vinárstvo {site.laneIn}</p>
             <h1 id="hero-nadpis" className="text-4xl sm:text-5xl">
               {site.tagline}
             </h1>
-            <p className="mt-6 max-w-(--container-text) text-lg text-pivnica-makka">
+            <p className="mt-6 max-w-(--container-text) text-lg text-vapno/90">
               Pivnicu máme vykopanú v spraši, rovnako ako ďalších jedenásť susedov v uličke. Príďte ochutnať, alebo si
               víno nechajte poslať domov.
             </p>
@@ -62,13 +69,23 @@ export default function HomePage() {
               <ButtonLink href="/mapa" size="lg">
                 Otvoriť mapu uličky
               </ButtonLink>
-              <ButtonLink href="/e-shop" variant="quiet" size="lg">
+              <ButtonLink href="/e-shop" variant="secondary" size="lg" className="border-vapno text-vapno hover:bg-vapno hover:text-pivnica">
                 Pozrieť vína
               </ButtonLink>
             </div>
           </div>
+          <p className="absolute right-4 bottom-3 text-xs text-vapno/70 sm:right-6">
+            Foto:{" "}
+            <a
+              href="https://unsplash.com/photos/mpfXEaWfdoQ"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline underline-offset-2 hover:text-vapno"
+            >
+              Amin Zabardast, Unsplash
+            </a>
+          </p>
         </Container>
-        <LoessSlope className="-mt-6 block h-64 w-full sm:-mt-16 sm:h-96 lg:-mt-40 lg:h-[34rem]" />
       </section>
 
       <Story />
@@ -84,16 +101,16 @@ export default function HomePage() {
   );
 }
 
-/** Príbeh: od svahu zostúpime do pivnice, preto tmavá sekcia. */
+/** Príbeh: svetlá sekcia hneď pod tmavou fotkou chodby. */
 function Story() {
   return (
-    <Section tone="cellar" labelledBy="pribeh-nadpis" className="pt-36 sm:pt-44">
+    <Section labelledBy="pribeh-nadpis">
       <div className="grid items-center gap-12 lg:grid-cols-[1.1fr_1fr] lg:gap-20">
         <div className="max-w-(--container-text)">
           <h2 id="pribeh-nadpis" className="text-2xl sm:text-3xl">
             Tretia generácia, jedna pivnica, dvanásť metrov spraše
           </h2>
-          <div className="mt-6 space-y-5 text-lg text-vapno/85">
+          <div className="mt-6 space-y-5 text-lg text-pivnica-makka">
             <p>
               Starý otec vykopal našu pivnicu rýľom a lopatou. Spraš sa dá krájať ako syr a drží teplotu lepšie než
               akýkoľvek betón. Aj v lete je v nej jedenásť stupňov.
@@ -104,18 +121,23 @@ function Story() {
             </p>
           </div>
           <div className="mt-8">
-            <ButtonLink href="/vinarstvo" variant="secondary" className="border-vapno text-vapno hover:bg-vapno hover:text-pivnica">
+            <ButtonLink href="/vinarstvo" variant="secondary">
               Prečítať celý príbeh
             </ButtonLink>
           </div>
         </div>
         <ArchFrame ratio="4/5" className="mx-auto w-full max-w-sm bg-spras">
-          <Image
-            src="/images/placeholder/pivnica.svg"
-            alt="Čelo našej pivnice s oblúkovými dverami"
-            fill
+          {/* Fotku pivnice dáte sem: zmeňte `src` na skutočný súbor, ilustrácia zmizne. */}
+          <Picture
+            photo={{ src: "/images/placeholder/pivnica.svg", alt: "Čelo našej pivnice s oblúkovými dverami" }}
             sizes="(min-width: 1024px) 384px, 90vw"
-            className="object-cover"
+            fallback={
+              <CellarFront
+                slug="na-sprasi"
+                label="Čelo našej pivnice s oblúkovými dverami"
+                className="absolute inset-0 h-full w-full"
+              />
+            }
           />
         </ArchFrame>
       </div>
@@ -140,13 +162,14 @@ function Lane() {
     },
   ];
   return (
-    <Section labelledBy="ulicka-nadpis">
+    <div className="bg-spras-svetla">
+    <Section tone="soil" labelledBy="ulicka-nadpis" className="pb-6 sm:pb-8">
       <SectionHeading id="ulicka-nadpis" lead="Sprašová ulička je malá. Za hodinu ju prejdete celú, za tri sa v nej stratíte radi.">
         Prejdite si uličku
       </SectionHeading>
       <ul className="grid gap-6 md:grid-cols-2">
         {items.map((it) => (
-          <li key={it.href} className="group relative rounded-(--radius-panel) bg-spras-svetla p-6 sm:p-8">
+          <li key={it.href} className="group relative rounded-(--radius-panel) bg-vapno p-6 sm:p-8">
             <Icon name={it.icon} width={36} height={36} className="text-frankovka" />
             <h3 className="mt-5 text-xl">
               <Link href={it.href} className="underline-offset-4 group-hover:underline after:absolute after:inset-0">
@@ -158,6 +181,8 @@ function Lane() {
         ))}
       </ul>
     </Section>
+    <LoessSlope className="block h-44 w-full sm:h-64 lg:h-80" />
+    </div>
   );
 }
 
@@ -165,7 +190,7 @@ async function FeaturedWines() {
   const wines = await getWines();
   const featured = featuredSlugs.map((s) => wines.find((w) => w.slug === s)).filter((w) => w !== undefined);
   return (
-    <Section tone="soil" labelledBy="vina-nadpis">
+    <Section labelledBy="vina-nadpis">
       <SectionHeading id="vina-nadpis" lead="Tri vína z troch radov. Dobrý začiatok, ak nás ešte nepoznáte.">
         Z pivnice na stôl
       </SectionHeading>

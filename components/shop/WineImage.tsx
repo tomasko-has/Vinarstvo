@@ -1,25 +1,38 @@
-import Image from "next/image";
+import { BottleIllustration, type BottleWine } from "@/components/illustration/BottleIllustration";
 import { ArchFrame } from "@/components/ui/ArchFrame";
+import { Picture } from "@/components/ui/Picture";
 import type { Wine } from "@/lib/schemas";
 
-/** Fotka fľaše v oblúkovom ráme. Bez fotky ostane prázdny sprašový oblúk. */
+/**
+ * Obraz vína v oblúkovom ráme. Ak je v dátach skutočná fotka, zobrazí sa tá,
+ * inak fľaša s etiketou nakreslená z dát vína.
+ */
 export function WineImage({
   wine,
   sizes,
   priority = false,
   className = "",
 }: {
-  wine: Pick<Wine, "images" | "name">;
+  wine: BottleWine & Pick<Wine, "images">;
   sizes: string;
   priority?: boolean;
   className?: string;
 }) {
-  const image = wine.images[0];
+  const photo = wine.images[0];
   return (
     <ArchFrame className={className}>
-      {image && (
-        <Image src={image.src} alt={image.alt} fill sizes={sizes} priority={priority} className="object-cover" />
-      )}
+      <Picture
+        photo={photo}
+        sizes={sizes}
+        priority={priority}
+        fallback={
+          <BottleIllustration
+            wine={wine}
+            label={photo?.alt ?? `Fľaša vína ${wine.name}`}
+            className="absolute inset-0 h-full w-full"
+          />
+        }
+      />
     </ArchFrame>
   );
 }

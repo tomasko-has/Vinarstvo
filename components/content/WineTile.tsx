@@ -1,15 +1,14 @@
-import Image from "next/image";
 import Link from "next/link";
+import { WineImage } from "@/components/shop/WineImage";
 import { type Wine, wineColorLabel, wineLineLabel } from "@/lib/schemas";
 import { formatEur } from "./format";
 
 /** Odkazová karta vína pre obsahové stránky. Nákup rieši e-shop, preto vedie na detail. */
 export function WineTile({ wine }: { wine: Wine }) {
-  const img = wine.images[0];
   return (
-    <li className="group relative flex gap-5 border-t-2 border-pivnica/80 pt-5">
-      {img ? <Image src={img.src} alt="" width={72} height={200} className="h-32 w-auto shrink-0" /> : null}
-      <div className="flex flex-1 flex-col">
+    <li className="group relative flex flex-col">
+      <WineImage wine={wine} sizes="(min-width: 768px) 28vw, 80vw" className="mx-auto w-full max-w-64" />
+      <div className="mt-4 flex flex-1 flex-col">
         <p className="text-sm text-pivnica-makka">
           {wineLineLabel[wine.line]}, {wineColorLabel[wine.color]}, {wine.vintage}
         </p>
